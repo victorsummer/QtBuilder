@@ -1,8 +1,6 @@
 require 'net/http'
 require 'uri'
 require 'progressbar'
-require 'rubygems'
-require 'zip'
 
 def download_file(url, filename, download_title, mode = 'wb')
   url_base = url.split('/')[2]
