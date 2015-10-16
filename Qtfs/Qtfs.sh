@@ -28,5 +28,7 @@ cd ..
 rm -rdf qt-everywhere-opensource-src-5.3.2
 rm qt-everywhere-opensource-src-5.3.2.tar.gz
 
+sudo rm -rdf $HOME/Qtfs
+
 echo "Done! The compiled Qt is installed at $HOME/Qtfs"
 pause
