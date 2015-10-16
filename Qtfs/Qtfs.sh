@@ -19,7 +19,7 @@ cd qt-everywhere-opensource-src-5.3.2
 cp ../qmake.conf qtbase/mkspecs/linux-arm-gnueabi-g++/
 
 echo "Configuring Qt"
-./configure -opensource -confirm-license -release -xplatform linux-arm-gnueabi-g++ -no-c++11 -qreal float -no-pch -no-xcb -nomake examples -prefix $HOME/Qtfs
+./configure -opensource -confirm-license -release -xplatform linux-arm-gnueabi-g++ -no-c++11 -qreal float -prefix /usr/local/Qt-5.3.2
 
 echo "Compiling Qt"
 make -j4 && make install
@@ -28,7 +28,7 @@ cd ..
 rm -rdf qt-everywhere-opensource-src-5.3.2
 rm qt-everywhere-opensource-src-5.3.2.tar.gz
 
-sudo rm -rdf $HOME/Qtfs
+sudo rm -rdf /usr/local/Qt-5.3.2
 
-echo "Done! The compiled Qt is installed at $HOME/Qtfs"
+echo "Done! The compiled Qt is installed at /usr/local/Qt-5.3.2"
 pause
