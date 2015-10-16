@@ -22,13 +22,12 @@ echo "Configuring Qt"
 ./configure -opensource -confirm-license -release -xplatform linux-arm-gnueabi-g++ -no-c++11 -qreal float -prefix /usr/local/Qt-5.3.2
 
 echo "Compiling Qt"
+sudo rm -rf /usr/local/Qt-5.3.2
 make -j4 && make install
 
 cd ..
-rm -rdf qt-everywhere-opensource-src-5.3.2
+rm -rf qt-everywhere-opensource-src-5.3.2
 rm qt-everywhere-opensource-src-5.3.2.tar.gz
-
-sudo rm -rdf /usr/local/Qt-5.3.2
 
 echo "Done! The compiled Qt is installed at /usr/local/Qt-5.3.2"
 pause
