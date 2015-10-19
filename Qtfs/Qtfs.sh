@@ -23,7 +23,8 @@ echo "Configuring Qt"
 
 echo "Compiling Qt"
 sudo rm -rf /usr/local/Qt-5.3.2
-make -j4 && make install
+make -j4
+sudo make install
 
 cd ..
 rm -rf qt-everywhere-opensource-src-5.3.2
