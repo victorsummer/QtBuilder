@@ -31,3 +31,15 @@ You need to have access to the internet, because the build script will update th
 
  1. It is tested with Qt5.6.0 enterprise alpha only.
  2. Only tested on Ubuntu 14.04 64 bits
+
+# QtLinux
+Compile Qt on Linux
+
+* Requirement:
+
+You need to have access to the internet, because the build script will update the system and install necessary dependencies. 
+
+* Limit:
+
+ 1. It is tested with Qt5.6.0 enterprise alpha only.
+ 2. Only tested on Ubuntu 14.04 64 bits
