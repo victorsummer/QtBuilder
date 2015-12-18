@@ -12,7 +12,7 @@ tar xvfz qt-everywhere-enterprise-src-5.6.0-alpha.tar.gz
 cd qt-everywhere-enterprise-src-5.6.0-alpha
 
 echo "Configuring Qt"
-./configure -prefix $HOME/StaticQt5.6.0Alpha -confirm-license -qt-xcb -nomake examples -nomake tests
+./configure -prefix $HOME/Qt5.6.0Alpha -confirm-license -qt-xcb -nomake examples -nomake tests
 
 echo "Compiling Qt"
 rm -rf $HOME/Qt5.6.0Alpha
