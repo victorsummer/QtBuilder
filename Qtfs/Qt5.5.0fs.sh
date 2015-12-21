@@ -30,7 +30,7 @@ rm -f qtbase/mkspecs/devices/linux-imx6-g++/qmake.conf
 sed '7c '"$ROOTPATH"'' ../qmake.conf > qtbase/mkspecs/devices/linux-imx6-g++/qmake.conf
 
 echo "Configuring Qt"
-./configure -release -opengl es2 -device imx6 -device-option CROSS_COMPILE=arm-none-linux-gnueabi- -prefix $HOME/QtImx6 -no-gcc-sysroot -no-openssl -qreal float -nomake examples -skip qtxmlpatterns -skip qtwebkit -no-icu -skip qtmultimedia
+./configure -release -opengl es2 -device imx6 -device-option CROSS_COMPILE=arm-none-linux-gnueabi- -prefix $HOME/QtImx6 -no-gcc-sysroot -no-openssl -qreal float -nomake examples -nomake tests -skip qtxmlpatterns -skip qtwebkit -no-icu -skip qtmultimedia
 
 echo "Compiling Qt"
 rm -rf $HOME/QtImx6
